@@ -1,0 +1,9 @@
+export const PRESS_ENTER = 'PRESS_ENTER';
+export const DELETE_TASK = 'DELETE_TASK';
+export const COMPLETE_TASK = 'COMPLETE_TASK';
+export const SET_PAGE = 'SET_PAGE'
+export const SELECT_PAGE = 'SELECT_PAGE';
+export const PREV_BTN = 'PREV_BTN';
+export const NEXT_BTN = 'NEXT_BTN';
+export const RETURN_PAGE = 'RETURN_PAGE';
+export const DELETE_ALL = 'DELETE_ALL';
