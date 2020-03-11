@@ -13,15 +13,14 @@ export default function toDoListReducer(state = defaultState , action){
             if(action.value == ""){
                 return state
             }else{
-            return Object.assign({}, state , {
-                value : state.value.concat({val : action.value  , isDone : false}),
-                currentPage : state.totalPage
-            });
-        }
+                return Object.assign({}, state , {
+                    value : state.value.concat({val : action.value  , isDone : false}),
+                    currentPage : state.totalPage
+                });
+            }
         case ActionType.DELETE_TASK:
             let newValue = Object.assign([], state.value);
                 newValue.splice(action.id , 1)
-                console.log(newValue)
                 return Object.assign({}, state ,{
                     value : newValue
                 });  
